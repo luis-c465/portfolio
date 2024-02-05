@@ -1,23 +1,26 @@
 {
-	"files.exclude": {
-		"**/.git": true,
-		"**/.svn": true,
-		"**/.hg": true,
-		"**/CVS": true,
-		"**/.DS_Store": true,
-		"**/Thumbs.db": true
-	},
-	"hide-files.files": [],
-	"cSpell.words": [
-		"Audiphy",
-		"Azur",
-		"developping",
-		"Dwida",
-		"Dwidder",
-		"garous",
-		"hoverable",
-		"Thierclieux",
-		"todos",
-		"Wroddit"
-	]
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  "hide-files.files": [],
+  "cSpell.words": [
+    "Audiphy",
+    "Azur",
+    "developping",
+    "Dwida",
+    "Dwidder",
+    "garous",
+    "hoverable",
+    "Thierclieux",
+    "todos",
+    "Wroddit"
+  ],
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-action.json": "file:///Users/luis/dev/portfolio/.github/workflows/deploy.yml"
+  }
 }
