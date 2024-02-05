@@ -79,7 +79,6 @@ const MY_PROJECTS: Array<Project> = [
       { label: "RiverRaid after 2000 epochs", src: p`darwin/riverraid.gif` },
       { label: "Breakout after 2000 epochs", src: p`darwin/breakout.gif` },
       { label: "Trained Lunar Lander", src: p`darwin/lander.gif` },
-      { label: "Trained Humanoid", src: p`darwin/humanoid2.gif` },
     ],
     logo: Assets.Pytorch,
     name: "Darwin",
