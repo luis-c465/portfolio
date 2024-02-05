@@ -9,6 +9,7 @@ const a = (light: string, dark?: string): Asset =>
 
 const Assets = {
   Arduino: a("arduino.svg"),
+  Autodesk: a("autodesk.svg"),
   AWS: a("aws.svg"),
   Bootstrap: a("bootstrap.svg"),
   C: a("c.svg"),
@@ -32,6 +33,7 @@ const Assets = {
   Csharp: a("csharp.svg"),
   Xamarin: a("xamarin.svg"),
   Tensorflow: a("tensorflow.svg"),
+  TERRA: a("terra.png"),
   TypeScript: a("ts.png"),
   VueJs: a("vue.png"),
   ReactJs: a("react.svg"),
@@ -58,6 +60,8 @@ const Assets = {
   Angular: a("angular.png"),
   PostgreSQL: a("postgres.png"),
   Firebase: a("firebase.png"),
+  FIU: a("fiu.png"),
+  Fusion360: a("fusion360.png"),
   Sass: a("sass.png"),
   Unknown: a("no-img.svg"),
   MongoDB: a("mongodb.svg"),

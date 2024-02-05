@@ -180,6 +180,26 @@ const MY_SKILLS: Skill[] = [
     logo: Assets.P5JS,
     name: "P5JS",
   },
+  {
+    slug: "autodesk",
+    color: "white",
+    description: `4 Years experience with Autodesk software
+		`,
+    logo: Assets.Autodesk,
+    name: "AutoDesk",
+  },
+  {
+    slug: "fusion360",
+    color: "orange",
+    description: `2 Years experience with Autodesk Fusion 360
+    Currently certified
+
+    Very comfortable using to design parts both to be 3D printed,
+    and to design.
+		`,
+    logo: Assets.Fusion360,
+    name: "Fusion 360",
+  },
 ];
 
 export default MY_SKILLS;

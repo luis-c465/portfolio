@@ -1,29 +1,35 @@
-import Assets from './data/assets';
-import type { Education } from './types';
+import Assets from "./data/assets";
+import type { Education } from "./types";
 
 export const MY_EDUCATIONS: Array<Education> = [
-	{
-		degree: 'Bachelor degree of Computer Science',
-		description: '',
-		location: 'Tunisia',
-		logo: Assets.Unknown,
-		name: '',
-		organization: 'ISTIC',
-		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
-		shortDescription: '',
-		slug: 'dummy-education-item',
-		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
-	},
-	{
-		degree: 'PhD of Computer Science',
-		description: '',
-		location: 'USA',
-		logo: Assets.Unknown,
-		name: '',
-		organization: 'MIT',
-		period: { from: new Date(2023, 0, 1) },
-		shortDescription: '',
-		slug: 'dummy-education-item-2',
-		subjects: ['Assembly', 'Rust', 'Computer Architecture', 'Algorithms and Data structures']
-	}
+  {
+    degree: "Bachelor degree of Computer Science",
+    description: "",
+    location: "Miami, FL",
+    logo: Assets.FIU,
+    name: "",
+    organization: "Florida International University",
+    period: { from: new Date(2023, 8, 0) },
+    shortDescription: "Current Freshman, 3.9 GPA",
+    slug: "college",
+    subjects: ["Java", "Discrete Structures", "Calculus 2"],
+  },
+  {
+    degree: "High School Graduate",
+    description: "",
+    location: "Miami, FL",
+    logo: Assets.TERRA,
+    name: "",
+    organization: "Terra Environmental Research Institute",
+    period: { from: new Date(2019, 8, 6), to: new Date(2023, 6, 20) },
+    shortDescription: "",
+    slug: "high-school",
+    subjects: [
+      "Java",
+      "Computer Science",
+      "Calculus 1",
+      "Fusion 360",
+      "Engineering",
+    ],
+  },
 ];
