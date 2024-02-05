@@ -57,7 +57,7 @@ const MY_PROJECTS: Array<Project> = [
       from: new Date(2022, 3),
       to: new Date(2023, 8),
     },
-    skills: getSkills("svelte", "js", "html", "css", "django"),
+    skills: getSkills("svelte", "js", "html", "css", "django", "selenium"),
     type: "Website",
   },
   {

@@ -232,6 +232,17 @@ const MY_SKILLS = [
     logo: Assets.Selenium,
     name: "Selenium",
   },
+  {
+    slug: "nextjs",
+    color: "white",
+    description: `2 Years experience with Next.JS
+
+    Very comfortable using to create static and dynamic
+    React based websited
+		`,
+    logo: Assets.NextJS,
+    name: "NextJS",
+  },
 ] satisfies Skill[];
 
 export default MY_SKILLS;
