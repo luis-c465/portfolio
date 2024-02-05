@@ -3,6 +3,7 @@ import { theme } from "$lib/stores/theme";
 import type { Asset } from "$lib/types";
 
 const gh = (file: string) => `${base}/logos/${file}`;
+export const p = (a: TemplateStringsArray) => `${base}/${a}`;
 
 const a = (light: string, dark?: string): Asset =>
   dark ? { dark: gh(dark), light: gh(light) } : gh(light);
@@ -20,6 +21,7 @@ const Assets = {
   Flask: a("flask.svg"),
   Go: a("go.svg"),
   Kafka: a("kafka.svg"),
+  NextJS: a("next-js.svg", "nextjs-dark.svg"),
   Neo4j: a("neo4j.svg"),
   Nginx: a("nginx.svg"),
   Numpy: a("numpy.svg"),
