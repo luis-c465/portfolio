@@ -4,7 +4,7 @@ import type { Skill } from "./types";
 export type ArrayElementType<ArrayType extends readonly unknown[]> =
   ArrayType extends readonly (infer ElementType)[] ? ElementType : never;
 
-const MY_SKILLS: Skill[] = [
+const MY_SKILLS = [
   {
     slug: "js",
     color: "yellow",
@@ -200,7 +200,39 @@ const MY_SKILLS: Skill[] = [
     logo: Assets.Fusion360,
     name: "Fusion 360",
   },
-];
+  {
+    slug: "wordpress",
+    color: "black",
+    description: `1 Year experience with Wordpress
+
+    Comfortable using to design web pages, managing plugins, &
+    adding custom functionality
+		`,
+    logo: Assets.Wordpress,
+    name: "Wordpress",
+  },
+  {
+    slug: "firebase",
+    color: "orange",
+    description: `2 Years experience with Firebase
+
+    Very comfortable using to manage data storage, authentication, & hosting
+		`,
+    logo: Assets.Firebase,
+    name: "Firebase",
+  },
+  {
+    slug: "selenium",
+    color: "green",
+    description: `Light experience with Selenium
+
+    Comfortable using to do integration tests on Full Stack frameworks &
+    for advanced web scraping
+		`,
+    logo: Assets.Selenium,
+    name: "Selenium",
+  },
+] satisfies Skill[];
 
 export default MY_SKILLS;
 

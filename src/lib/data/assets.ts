@@ -82,6 +82,7 @@ const Assets = {
   Unocss: a("unocss.svg"),
   Ruvy: a("ruvy.svg"),
   Postcss: a("postcss.svg"),
+  Wordpress: a("wordpress.svg"),
 };
 
 export default Assets;
