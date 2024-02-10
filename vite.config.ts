@@ -1,12 +1,13 @@
 import { sveltekit } from "@sveltejs/kit/vite";
 import UnoCSS from "unocss/vite";
-import type { UserConfig } from "vite";
+import { defineConfig } from "vite";
+import topLevelAwait from "vite-plugin-top-level-await";
 
-const config: UserConfig = {
-  plugins: [UnoCSS(), sveltekit()],
+const config = defineConfig({
+  plugins: [topLevelAwait(), UnoCSS(), sveltekit()],
   build: {
     target: "ES2022",
   },
-};
+});
 
 export default config;
