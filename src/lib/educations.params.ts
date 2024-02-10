@@ -13,6 +13,7 @@ export const MY_EDUCATIONS: Array<Education> = [
     shortDescription: "Current Freshman, 3.9 GPA",
     slug: "college",
     subjects: ["Java", "Discrete Structures", "Calculus 2"],
+    expectedGraduation: new Date(2027, 8, 0),
   },
   {
     degree: "High School Graduate",

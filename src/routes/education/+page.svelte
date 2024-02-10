@@ -7,7 +7,7 @@
 
 	import { EDUCATION } from '$lib/params';
 	import type { Education } from '$lib/types';
-	import { getTimeDiff } from '$lib/utils';
+	import { dateFormat, getTimeDiff } from '$lib/utils';
 
 	const { items, title } = EDUCATION;
 
@@ -64,8 +64,16 @@
 								/>
 								<div class="text-[1.3em]">{education.degree}</div>
 								<div>{education.organization}</div>
-								<div class="text-[var(--accent-text)] text-[0.9em] font-200 mb-2">
-									{education.location} · {getTimeDiff(education.period.from, education.period.to)}
+								<div class="flex justify-between">
+									<span class="text-[var(--accent-text)] text-[0.9em] font-200 mb-2">
+										{education.location} · {getTimeDiff(education.period.from, education.period.to)}
+									</span>
+
+									<span class="text-[var(--accent-text)] text-[0.9em] font-200 mb-2"
+										>{education.expectedGraduation
+											? `Expected ${dateFormat(education.expectedGraduation)}`
+											: ''}</span
+									>
 								</div>
 								<div class="row flex-wrap gap-1">
 									{#each education.subjects as subject}
