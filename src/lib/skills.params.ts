@@ -1,173 +1,168 @@
 import Assets from "./data/assets";
+import arduino from "./md/arduino.md?raw";
+import css from "./md/css.md?raw";
+import django from "./md/django.md?raw";
+import expo from "./md/expo.md?raw";
+import java from "./md/java.md?raw";
+import js from "./md/js.md?raw";
+import kivy from "./md/kivy.md?raw";
+import processing from "./md/processing.md?raw";
+import python from "./md/python.md?raw";
+import pytorch from "./md/pytorch.md?raw";
+import react from "./md/react.md?raw";
+import svelte from "./md/svelte.md?raw";
+import tw from "./md/tailwind.md?raw";
+import tensorflow from "./md/tensorflow.md?raw";
+import { default as html, default as ts } from "./md/ts.md?raw";
 import type { Skill } from "./types";
 
 export type ArrayElementType<ArrayType extends readonly unknown[]> =
   ArrayType extends readonly (infer ElementType)[] ? ElementType : never;
 
-const MY_SKILLS = [
+const MY_SKILLS: Skill[] = [
   {
     slug: "js",
     color: "yellow",
-    description: `3 years experience with Javascript
-
-		Very comfortable using in both older server side frameworks like Django and newer ones like Next JS
-		`,
+    description: js,
     logo: Assets.JavaScript,
     name: "Javascript",
+    types: ["frontend"],
+    experience: 3,
   },
   {
     slug: "ts",
     color: "blue",
-    description: `2 years experience with Typescript
-
-		Very comfortable using both for writing application code & types as well as library code
-		`,
+    description: ts,
     logo: Assets.TypeScript,
     name: "Typescript",
+    types: ["frontend"],
+    experience: 3,
   },
   {
     slug: "css",
     color: "blue",
-    description: `3 years experience with CSS
-
-		Very comfortable using with standard stylesheets, inline styles, as well as with TailWindCSS`,
+    description: css,
     logo: Assets.CSS,
     name: "CSS",
+    types: ["frontend"],
+    experience: 3,
   },
   {
     slug: "html",
     color: "orange",
-    description: "3 years experience with HTML",
+    description: html,
     logo: Assets.HTML,
     name: "HTML",
+    types: ["frontend"],
+    experience: 3,
   },
   {
     slug: "tailwind",
     color: "cyan",
-    description: "1 year experience with Tailwind CSS",
+    description: tw,
     logo: Assets.Tailwind,
     name: "Tailwind CSS",
+    types: ["frontend"],
+    experience: 1,
   },
   {
     slug: "reactjs",
     color: "cyan",
-    description: `2 Years experience with React.JS
-
-			Very comfortable with functional component style, creating react hooks,
-			managing state / contexts, and server side integrations`,
+    description: react,
     logo: Assets.ReactJs,
     name: "React Js",
+    types: ["frontend"],
+    experience: 2,
   },
   {
     slug: "expo",
     color: "gray",
-    description: `1 Year experience with Expo
-
-			Very comfortable scaffolding projects &
-			creating mobile apps using the Expo ecosystem`,
+    description: expo,
     logo: Assets.Expo,
     name: "Expo & React Native",
+    types: ["frontend"],
+    experience: 1,
   },
   {
     slug: "svelte",
     color: "orange",
-    description: `2 Years experience with Svelte
-
-		Comfortable with the 'Svelte way' of doing things.
-		Used instead of React.js because of it's lower bundle size.
-		`,
+    description: svelte,
     logo: Assets.Svelte,
     name: "Svelte",
+    types: ["frontend"],
+    experience: 2,
   },
   {
     slug: "django",
     color: "lime",
-    description: `2 Years experience with Django
-
-		Very comfortable using to create full stack websites with data storage & authentication.
-		`,
+    description: django,
     logo: Assets.Django,
     name: "Django",
+    types: ["backend"],
+    experience: 2,
   },
   {
     slug: "arduino",
     color: "cyan",
-    description: `2 Years experience with Arduino
-
-		Very comfortable both Programming the Microcontroller using Arduino IDE v2 & creating &
-		creating small electronics.
-		`,
+    description: arduino,
     logo: Assets.Arduino,
     name: "Arduino",
+    types: ["robotics"],
+    experience: 2,
   },
   {
     slug: "tensorflow",
     color: "orange",
-    description: `1 Year experience with Tensorflow
-
-		Very comfortable using to create & train Maching Learning models
-		Have used to create Reinforcement Learning & Supervised Learning
-		`,
+    description: tensorflow,
     logo: Assets.Tensorflow,
     name: "Tensorflow",
+    experience: 1,
+    types: ["AI"],
   },
   {
     slug: "pytorch",
     color: "orange",
-    description: `1 Year experience with Pytorch
-
-		Very comfortable using to create & train Maching Learning models
-		Have used to create Reinforcement Learning & Supervised Learning
-		`,
+    description: pytorch,
     logo: Assets.Pytorch,
     name: "Pytorch",
+    experience: 1,
+    types: ["AI"],
   },
   {
     slug: "python",
     color: "yellow",
-    description: `3 Years experience with Python
-
-		Very comfortable using to create small scripts for company utilities &
-		to scaffold entire applications spanning 3000 lines
-
-		Knowledgeable about both the strengths (readability) & weaknesses (speed) of python
-		and when it is most applicable to use over another technology
-		`,
+    description: python,
     logo: Assets.Python,
     name: "Python",
+    experience: 3,
+    types: ["frontend", "backend", "AI"],
   },
   {
     slug: "kivy",
     color: "black",
-    description: `1 Year experience with Kivy
-
-		Very comfortable using to create small python GUI applications
-		& to scaffold GUI's for research projects
-		`,
+    description: kivy,
     logo: Assets.Kivy,
     name: "Kivy",
+    experience: 1,
+    types: ["frontend"],
   },
   {
     slug: "java",
     color: "red",
-    description: `2 Years experience with Java
-
-		Very comfortable using to create enterprise grade applications
-		& to complete programming assignments
-		`,
+    description: java,
     logo: Assets.Java,
     name: "Java",
+    experience: 2,
+    types: ["backend"],
   },
   {
     slug: "processing",
     color: "blue",
-    description: `2 Years experience with Processing
-
-		Very comfortable using to create visual and interactive programs.
-    Have used to create entire GUI's for Java applications & simulate physics.
-		`,
+    description: processing,
     logo: Assets.Processing,
     name: "Processing",
+    experience: 2,
+    types: ["frontend"],
   },
   {
     slug: "p5js",
@@ -179,6 +174,8 @@ const MY_SKILLS = [
 		`,
     logo: Assets.P5JS,
     name: "P5JS",
+    experience: 2,
+    types: ["frontend"],
   },
   {
     slug: "autodesk",
@@ -187,6 +184,8 @@ const MY_SKILLS = [
 		`,
     logo: Assets.Autodesk,
     name: "AutoDesk",
+    experience: 4,
+    types: ["design"],
   },
   {
     slug: "fusion360",
@@ -199,6 +198,8 @@ const MY_SKILLS = [
 		`,
     logo: Assets.Fusion360,
     name: "Fusion 360",
+    experience: 2,
+    types: ["design"],
   },
   {
     slug: "wordpress",
@@ -210,6 +211,8 @@ const MY_SKILLS = [
 		`,
     logo: Assets.Wordpress,
     name: "Wordpress",
+    experience: 1,
+    types: ["frontend"],
   },
   {
     slug: "firebase",
@@ -220,6 +223,8 @@ const MY_SKILLS = [
 		`,
     logo: Assets.Firebase,
     name: "Firebase",
+    experience: 2,
+    types: ["cloud"],
   },
   {
     slug: "selenium",
@@ -231,6 +236,8 @@ const MY_SKILLS = [
 		`,
     logo: Assets.Selenium,
     name: "Selenium",
+    experience: "Light",
+    types: ["backend"],
   },
   {
     slug: "nextjs",
@@ -242,8 +249,10 @@ const MY_SKILLS = [
 		`,
     logo: Assets.NextJS,
     name: "NextJS",
+    experience: 2,
+    types: ["frontend"],
   },
-] satisfies Skill[];
+];
 
 export default MY_SKILLS;
 

@@ -42,8 +42,19 @@ export interface IconLink extends Link {
   icon: Asset;
 }
 
+export type SkillType =
+  | "frontend"
+  | "backend"
+  | "AI"
+  | "game"
+  | "design"
+  | "robotics"
+  | "cloud";
+
 export interface Skill extends Omit<Item, "shortDescription"> {
   color: string;
+  types: SkillType[];
+  experience: number | string;
 }
 
 export interface Project extends Item {
