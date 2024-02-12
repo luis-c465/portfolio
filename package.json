@@ -48,7 +48,9 @@
   },
   "type": "module",
   "dependencies": {
+    "@types/lodash-es": "^4.17.12",
     "dayjs": "^1.11.10",
+    "lodash-es": "^4.17.21",
     "prismjs": "^1.29.0",
     "svelte-pdf": "^1.0.20",
     "svelte-pdfjs": "^0.6.3"

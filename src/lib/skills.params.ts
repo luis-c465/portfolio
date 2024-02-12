@@ -26,7 +26,7 @@ const MY_SKILLS: Skill[] = [
     description: js,
     logo: Assets.JavaScript,
     name: "Javascript",
-    types: ["frontend"],
+    type: "frontend",
     experience: 3,
   },
   {
@@ -35,7 +35,7 @@ const MY_SKILLS: Skill[] = [
     description: ts,
     logo: Assets.TypeScript,
     name: "Typescript",
-    types: ["frontend"],
+    type: "frontend",
     experience: 3,
   },
   {
@@ -44,7 +44,7 @@ const MY_SKILLS: Skill[] = [
     description: css,
     logo: Assets.CSS,
     name: "CSS",
-    types: ["frontend"],
+    type: "frontend",
     experience: 3,
   },
   {
@@ -53,7 +53,7 @@ const MY_SKILLS: Skill[] = [
     description: html,
     logo: Assets.HTML,
     name: "HTML",
-    types: ["frontend"],
+    type: "frontend",
     experience: 3,
   },
   {
@@ -62,7 +62,7 @@ const MY_SKILLS: Skill[] = [
     description: tw,
     logo: Assets.Tailwind,
     name: "Tailwind CSS",
-    types: ["frontend"],
+    type: "frontend",
     experience: 1,
   },
   {
@@ -71,7 +71,7 @@ const MY_SKILLS: Skill[] = [
     description: react,
     logo: Assets.ReactJs,
     name: "React Js",
-    types: ["frontend"],
+    type: "frontend",
     experience: 2,
   },
   {
@@ -80,7 +80,7 @@ const MY_SKILLS: Skill[] = [
     description: expo,
     logo: Assets.Expo,
     name: "Expo & React Native",
-    types: ["frontend"],
+    type: "frontend",
     experience: 1,
   },
   {
@@ -89,7 +89,7 @@ const MY_SKILLS: Skill[] = [
     description: svelte,
     logo: Assets.Svelte,
     name: "Svelte",
-    types: ["frontend"],
+    type: "frontend",
     experience: 2,
   },
   {
@@ -98,16 +98,7 @@ const MY_SKILLS: Skill[] = [
     description: django,
     logo: Assets.Django,
     name: "Django",
-    types: ["backend"],
-    experience: 2,
-  },
-  {
-    slug: "arduino",
-    color: "cyan",
-    description: arduino,
-    logo: Assets.Arduino,
-    name: "Arduino",
-    types: ["robotics"],
+    type: "backend",
     experience: 2,
   },
   {
@@ -117,7 +108,7 @@ const MY_SKILLS: Skill[] = [
     logo: Assets.Tensorflow,
     name: "Tensorflow",
     experience: 1,
-    types: ["AI"],
+    type: "AI",
   },
   {
     slug: "pytorch",
@@ -126,7 +117,7 @@ const MY_SKILLS: Skill[] = [
     logo: Assets.Pytorch,
     name: "Pytorch",
     experience: 1,
-    types: ["AI"],
+    type: "AI",
   },
   {
     slug: "python",
@@ -135,7 +126,7 @@ const MY_SKILLS: Skill[] = [
     logo: Assets.Python,
     name: "Python",
     experience: 3,
-    types: ["frontend", "backend", "AI"],
+    type: "AI",
   },
   {
     slug: "kivy",
@@ -144,7 +135,7 @@ const MY_SKILLS: Skill[] = [
     logo: Assets.Kivy,
     name: "Kivy",
     experience: 1,
-    types: ["frontend"],
+    type: "frontend",
   },
   {
     slug: "java",
@@ -153,7 +144,7 @@ const MY_SKILLS: Skill[] = [
     logo: Assets.Java,
     name: "Java",
     experience: 2,
-    types: ["backend"],
+    type: "backend",
   },
   {
     slug: "processing",
@@ -162,7 +153,7 @@ const MY_SKILLS: Skill[] = [
     logo: Assets.Processing,
     name: "Processing",
     experience: 2,
-    types: ["frontend"],
+    type: "frontend",
   },
   {
     slug: "p5js",
@@ -175,7 +166,7 @@ const MY_SKILLS: Skill[] = [
     logo: Assets.P5JS,
     name: "P5JS",
     experience: 2,
-    types: ["frontend"],
+    type: "frontend",
   },
   {
     slug: "autodesk",
@@ -185,7 +176,7 @@ const MY_SKILLS: Skill[] = [
     logo: Assets.Autodesk,
     name: "AutoDesk",
     experience: 4,
-    types: ["design"],
+    type: "design",
   },
   {
     slug: "fusion360",
@@ -199,7 +190,7 @@ const MY_SKILLS: Skill[] = [
     logo: Assets.Fusion360,
     name: "Fusion 360",
     experience: 2,
-    types: ["design"],
+    type: "design",
   },
   {
     slug: "wordpress",
@@ -212,7 +203,7 @@ const MY_SKILLS: Skill[] = [
     logo: Assets.Wordpress,
     name: "Wordpress",
     experience: 1,
-    types: ["frontend"],
+    type: "frontend",
   },
   {
     slug: "firebase",
@@ -224,7 +215,7 @@ const MY_SKILLS: Skill[] = [
     logo: Assets.Firebase,
     name: "Firebase",
     experience: 2,
-    types: ["cloud"],
+    type: "cloud",
   },
   {
     slug: "selenium",
@@ -237,7 +228,7 @@ const MY_SKILLS: Skill[] = [
     logo: Assets.Selenium,
     name: "Selenium",
     experience: "Light",
-    types: ["backend"],
+    type: "backend",
   },
   {
     slug: "nextjs",
@@ -250,7 +241,16 @@ const MY_SKILLS: Skill[] = [
     logo: Assets.NextJS,
     name: "NextJS",
     experience: 2,
-    types: ["frontend"],
+    type: "frontend",
+  },
+  {
+    slug: "arduino",
+    color: "cyan",
+    description: arduino,
+    logo: Assets.Arduino,
+    name: "Arduino",
+    type: "robotics",
+    experience: 2,
   },
 ];
 

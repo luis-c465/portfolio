@@ -53,7 +53,7 @@ export type SkillType =
 
 export interface Skill extends Omit<Item, "shortDescription"> {
   color: string;
-  types: SkillType[];
+  type: SkillType;
   experience: number | string;
 }
 
