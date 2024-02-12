@@ -48,6 +48,11 @@
 							color={skill.color}
 						>
 							<p class="text-[var(--tertiary-text)]">{skill.name}</p>
+							<span class="text-[var(--tertiary-text)] text-xs">
+								{typeof skill.experience === 'number'
+									? `${skill.experience} years experience`
+									: `${skill.experience} experience`}
+							</span>
 						</Card>
 					{/each}
 				</div>
